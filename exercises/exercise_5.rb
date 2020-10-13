@@ -8,3 +8,9 @@ puts "Exercise 5"
 puts "----------"
 
 # Your code goes here ...
+puts Store.sum("annual_revenue")
+puts Store.average("annual_revenue")
+
+# Customer.includes("orders").where(first_name: 'Ryan', orders: { status: 'shipped' }).count
+
+puts Store.where("annual_revenue > 1000000").count
